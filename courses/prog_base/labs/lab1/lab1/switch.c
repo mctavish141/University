@@ -55,7 +55,7 @@ int exec (int op, int a, int b) {
         case 3:
             return a * b;
         case 4:
-            return a / b;
+            return (b == 0) ? 0 : a / b;
         case 5:
             return abs(a);
         case 6:
@@ -63,7 +63,7 @@ int exec (int op, int a, int b) {
         case 7:
         case 13:
         case 77:
-            return a % b;
+            return (b == 0) ? 0 : a % b;
         case 8:
             return (a > b) ? a : b;
         case 9:
@@ -71,11 +71,16 @@ int exec (int op, int a, int b) {
         case 10:
             return abs(a) * sizeOfDataType(abs(b) % 8);
         case 11:
-            if ((a - n1) == 0) {
-                return 0;
-            }
-            return ((n0 + 1) * cos(b * M_PI) / (a - n1));
+            return ((a - n1) == 0) ? 0 : ((n0 + 1) * cos(b * M_PI) / (a - n1));
         default:
-            return (op < 100) ? (op % abs(a + 1)) + (op % abs(b + 1)) : -1;
+            /*if ((op < 100) && (((a + 1) == 0) || ((b + 1) == 0))) {
+                return NAN;
+            }
+            return (op < 100) ? (op % abs(a + 1)) + (op % abs(b + 1)) : -1;*/
+            /*if (op >= 100) {
+                return -1;
+            }
+            return (((a + 1) == 0) || ((b + 1) == 0)) ? NAN : (op % abs(a + 1)) + (op % abs(b + 1));*/
+            return (op >= 100) ? -1 : (((a + 1) == 0) || ((b + 1) == 0)) ? 0 : (op % abs(a + 1)) + (op % abs(b + 1));
     }
 }
