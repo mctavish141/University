@@ -68,9 +68,9 @@
 			children = (
 				B483E78B1BB9837000D923E3 /* main.c */,
 				B483E7951BB9945F00D923E3 /* condition.c */,
+				B483E7961BB9945F00D923E3 /* condition.h */,
 				B433CBB61BB9CB0800757C10 /* switch.c */,
 				B433CBB71BB9CB0800757C10 /* switch.h */,
-				B483E7961BB9945F00D923E3 /* condition.h */,
 				B483E7921BB9861C00D923E3 /* math.c */,
 				B483E7931BB9861C00D923E3 /* math.h */,
 			);

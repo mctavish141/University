@@ -20,7 +20,7 @@ int validate (double x, double y, double z, int n0, int n1) {
         return 0;
     }
     double poweredNumber = pow(x - y, 1 / z);
-    if ((poweredNumber == 0) || (poweredNumber == NAN)) {
+    if ((poweredNumber == 0) || (isnan(poweredNumber))) {
         return 0;
     }
     
