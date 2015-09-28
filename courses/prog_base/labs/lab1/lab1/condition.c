@@ -10,7 +10,6 @@
 
 #include <stdlib.h>
 #include <math.h>
-#include <ctype.h>
 
 int isPowerOfTwo (int number) {
     double power = log2(number);
