@@ -29,15 +29,14 @@ int validate (double x, double y, double z, int n0, int n1) {
     if (x == 0) {
         return 0;
     }
-    /*if (((n0 + 1) * fabs (x + y)) == 0) {
-        return 0;
-    }*/
     
     // Validating a2:
     
     if (sin(x) == 0) {
         return 0;
     }
+    
+    // Everything OK:
     
     return 1;
 }
@@ -53,10 +52,7 @@ double calc (double x, double y, double z) {
     }
     
     a0 = pow(x, y + 1) / pow(x - y, 1 / z);
-    
     a1 = (n0 * y) + (z / x);
-    //a1 = y / ((n0 + 1) * fabs (x + y));
-    
     a2 = sqrt(fabs((cos(y) / sin(x)) + n1));
     
     double a = a0 + a1 + a2;
