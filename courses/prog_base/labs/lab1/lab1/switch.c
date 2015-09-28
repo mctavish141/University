@@ -73,14 +73,6 @@ int exec (int op, int a, int b) {
         case 11:
             return ((a - n1) == 0) ? 0 : ((n0 + 1) * cos(b * M_PI) / (a - n1));
         default:
-            /*if ((op < 100) && (((a + 1) == 0) || ((b + 1) == 0))) {
-                return NAN;
-            }
-            return (op < 100) ? (op % abs(a + 1)) + (op % abs(b + 1)) : -1;*/
-            /*if (op >= 100) {
-                return -1;
-            }
-            return (((a + 1) == 0) || ((b + 1) == 0)) ? NAN : (op % abs(a + 1)) + (op % abs(b + 1));*/
             return (op >= 100) ? -1 : (((a + 1) == 0) || ((b + 1) == 0)) ? 0 : (op % abs(a + 1)) + (op % abs(b + 1));
     }
 }
