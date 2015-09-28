@@ -8,8 +8,15 @@
 
 #include <stdio.h>
 
+#include "math.h"
+
+void testCalc (double x, double y, double z) {
+    double result = calc(x, y, z);
+    printf("%.12lf\n", result);
+}
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    testCalc(1.5, 2.5, 0.5);
+    
     return 0;
 }
