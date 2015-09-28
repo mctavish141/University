@@ -10,6 +10,7 @@
 
 #include "math.h"
 #include "condition.h"
+#include "switch.h"
 
 void testCalc (double x, double y, double z) {
     double result = calc(x, y, z);
@@ -21,10 +22,17 @@ void testSatisfies (int a, int b, int c) {
     printf("%d\n", result);
 }
 
+void testExec (int op, int a, int b) {
+    int result = exec(op, a, b);
+    printf("%d\n", result);
+}
+
 int main(int argc, const char * argv[]) {
     //testCalc(1.5, 2.5, 0.5);
     
-    testSatisfies(1, 2, 3);
+    //testSatisfies(1, 2, 3);
+    
+    testExec(1, 2, 2);
     
     return 0;
 }

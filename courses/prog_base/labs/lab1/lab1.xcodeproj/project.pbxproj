@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B433CBB81BB9CB0800757C10 /* switch.c in Sources */ = {isa = PBXBuildFile; fileRef = B433CBB61BB9CB0800757C10 /* switch.c */; };
 		B483E78C1BB9837000D923E3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B483E78B1BB9837000D923E3 /* main.c */; };
 		B483E7941BB9861C00D923E3 /* math.c in Sources */ = {isa = PBXBuildFile; fileRef = B483E7921BB9861C00D923E3 /* math.c */; };
 		B483E7971BB9945F00D923E3 /* condition.c in Sources */ = {isa = PBXBuildFile; fileRef = B483E7951BB9945F00D923E3 /* condition.c */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B433CBB61BB9CB0800757C10 /* switch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = switch.c; sourceTree = "<group>"; };
+		B433CBB71BB9CB0800757C10 /* switch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = switch.h; sourceTree = "<group>"; };
 		B483E7881BB9836F00D923E3 /* lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab1; sourceTree = BUILT_PRODUCTS_DIR; };
 		B483E78B1BB9837000D923E3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		B483E7921BB9861C00D923E3 /* math.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = math.c; sourceTree = "<group>"; };
@@ -65,6 +68,8 @@
 			children = (
 				B483E78B1BB9837000D923E3 /* main.c */,
 				B483E7951BB9945F00D923E3 /* condition.c */,
+				B433CBB61BB9CB0800757C10 /* switch.c */,
+				B433CBB71BB9CB0800757C10 /* switch.h */,
 				B483E7961BB9945F00D923E3 /* condition.h */,
 				B483E7921BB9861C00D923E3 /* math.c */,
 				B483E7931BB9861C00D923E3 /* math.h */,
@@ -131,6 +136,7 @@
 				B483E78C1BB9837000D923E3 /* main.c in Sources */,
 				B483E7941BB9861C00D923E3 /* math.c in Sources */,
 				B483E7971BB9945F00D923E3 /* condition.c in Sources */,
+				B433CBB81BB9CB0800757C10 /* switch.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
