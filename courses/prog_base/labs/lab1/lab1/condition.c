@@ -73,7 +73,7 @@ int satisfies (int a, int b, int c) {
             max = (max > c) ? max : c;
             int min;
             min = (a < b) ? a : b;
-            min = (max < c) ? max : c;
+            min = (min < c) ? min : c;
             
             double maxShortInt = pow(2, sizeof(short) * 8) / 2 - 1;
             return (pow(max, min) <= maxShortInt);
