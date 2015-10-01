@@ -59,10 +59,10 @@ int satisfies (int a, int b, int c) {
                 }
                 return (c > -256);
             } else {
-                if (a < 0) {
+                if (a >= 0) {
                     return (((b + c) * (n0 + n1)) > -256);
                 }
-                if (b < 0) {
+                if (b >= 0) {
                     return (((a + c) * (n0 + n1)) > -256);
                 }
                 return (((a + b) * (n0 + n1)) > -256);
